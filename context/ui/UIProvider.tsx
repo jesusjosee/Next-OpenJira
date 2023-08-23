@@ -10,6 +10,7 @@ const UI_INITIAL_STATE: UIState = {
 }
 
 export const UIProvider = ({children}:{children: React.ReactNode}) => {
+    
     const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE)
 
   return (
